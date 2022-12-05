@@ -1,1 +1,1 @@
-https://github.com/hericle/sitegowragnarok.git
+https://hericle.github.io/sitegowragnarok/
