@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Of War Ragnarok</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="/imagens/logo/logoomega.png" alt="logo_omega" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="cronologia.html">Cronologia</a></li>
+                    <li><a href="curiosidade.html">Curiosidades</a></li>
+                    <li><a href="guia.html">Guia</a></li>
+                    <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banners">
+        <div class="container">
+            <ul id="slider">
+                <li><img src="imagens/banners/img1.jpg" alt="img1"></li>
+                <li><img src="imagens/banners/img2.jpg" alt="img2"></li>
+                <li><img src="imagens/banners/img3.jpg" alt="img3">/li>
+                <li><img src="imagens/banners/img4.jpg" alt="img4"></li>
+            </ul>
+        </div>
+    </section>
+
+    <main>
+        <p>
+        <div class="texto">
+            <h1>God Of War Ragnarok</h1>
+            <p>God of War Ragnarök dá sequência à jornada de Kratos e Atreus pela mitologia nórdica, iniciada em 2018. Na ocasião, o Fantasma de Esparta deixou a vingança contra os deuses do Olimpo para trás e ganhou uma segunda chance, mas se viu forçado a encarar e controlar sua fúria enquanto viajava por um mundo ameaçador em um uma jornada profunda e pessoal.
+
+                A repaginação de God of War reuniu tudo o que a franquia trouxe de melhor desde 2005, ano que fez sua estreia no PlayStation 2: combate brutal, lutas épicas e chefes grandiosos. Mas dessa vez, o Santa Monica Studio foi além e introduziu uma narrativa poderosa e emocionante, que não somente restabeleceu o mundo do Deus da Guerra, como garantiu o prêmio de Melhor Jogo do Ano segundo o The Game Awards.
+            </p>
+
+        </div>
+        </p>
+    </main>
+    <footer id="rodape">
+
+        <form>
+
+            Informações
+            <div class="txtRodape">
+                <p>UniRios - Centro Universitário do Rio São Francisco</p>
+                
+                <p>Curso Sistema de Informação</p>
+    
+                <p>1º périodo </p>
+    
+                <p>Hericle Dias Bispo</p>
+            </div>
+
+        </form>
+    </footer>
+</body>
+
+</html>
