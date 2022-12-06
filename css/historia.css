@@ -91,9 +91,8 @@ body{
 .texto1 img{
     float: left;
     width: 400px;
-    border-radius: 30px;
     margin-right: 30px;
-    padding-top: 80px;
+    padding-top: 140px;
 }
 
 .texto2 h1{

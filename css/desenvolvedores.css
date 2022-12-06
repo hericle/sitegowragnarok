@@ -63,7 +63,6 @@ body{
 .slide{
     display: grid;
     grid-auto-flow: column;
-    gap: 1.2rem;
     overflow-y: auto;
     max-width: 800px;
     margin: 0 auto;
